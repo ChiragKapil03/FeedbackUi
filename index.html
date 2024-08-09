@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackUI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace , Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/020/893/604/original/spiral-eyes-emoji-horizontal-transition-green-screen-free-video.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 420px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 1px rgb(187, 239, 208);
+            background-color: aliceblue;
+        }
+        #heading{
+            color: #006400;
+        }
+
+        #emoji{
+            display: flex;
+            gap: 50px;
+        }
+
+        #unhappy , #neutral , #satisfied{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width:100px ;
+            height: 100px;
+        }
+        #unhappy:hover,#neutral:hover,#satisfied:hover{
+           background-color: #8fbc8f;
+           color: white;
+           border-radius: 10px;
+           box-shadow: 0px 0px 5px gray;
+        }
+        
+
+        img {
+            height: 50px;
+            width: 50px;
+            
+        }
+        #button{
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            border: 0;
+            background-color: #008b8b;
+            cursor: pointer;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #button:hover{
+            box-shadow: 0px 0px 5px gray;
+        }
+        .outDiv{
+            font-family: monospace , Arial, Helvetica, sans-serif;
+            color: #006400;
+            font-weight: 800;
+        }
+        .outDiv h2{
+            color: #000364;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="heading">FeedBack UI</h1>
+        <div id="emoji">
+            <div id="unhappy">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166527.png" alt="">
+                <p>Unhappy</p>
+            </div>
+            <div id="neutral">
+                <img src="https://cdn-icons-png.flaticon.com/512/1791/1791385.png" alt="">
+                <p>Neutral</p>
+            </div>
+            <div id="satisfied">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" alt="">
+                <p>Satisfied</p>
+            </div>
+        </div>
+        <button id="button">Send review</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
